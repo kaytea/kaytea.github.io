@@ -1,0 +1,483 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"vi",
+				"vertical-align"
+			],
+			[
+				"tab",
+				"table-row"
+			],
+			[
+				"Re",
+				"RedList"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"creat",
+				"createCharMarker"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"left",
+				"leftBodyTxt"
+			],
+			[
+				"l",
+				"leftBodyTxt"
+			],
+			[
+				"rightB",
+				"rightBodyTxt"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "colors.json",
+			"settings":
+			{
+				"buffer_size": 6487,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "var colorList;\n\nfunction fetchList(input) {\n  switch(input){\n    case \"Red\": return colorList.colors[0].Red;\n      break;\n    case \"Pink\": return colorList.colors[1].Pink;\n      break;\n    case \"Orange\": return colorList.colors[2].Orange;\n      break;\n    case \"Yellow\": return colorList.colors[3].Yellow;\n      break;\n    case \"Green\": return colorList.colors[4].Green;\n      break;\n    case \"Cyan\": return colorList.colors[5].Cyan;\n      break;\n    case \"Blue\": return colorList.colors[6].Blue;\n      break;\n    case \"Purple\": return colorList.colors[7].Purple;\n      break;\n    case \"Brown\": return colorList.colors[8].Brown;\n      break;\n    case \"White\": return colorList.colors[9].White;\n      break;\n    default: return colorList.colors[10].Grey;\n      break;\n  }\n}\n\n$(document).ready(function() {\n\n  $.getJSON('colors2.json', function(data) {\n    console.log(\"run\");\n    colorList = data;\n    console.log(\"read in colors(?)\");\n    console.log(colorList.colors);\n    //buildLists(colorList.colors);\n  });\n\n  $('.colorBlockMini:input').submit( function () {//color of selected box\n    var newColor = $(this).parent.css('background-color');\n    $('#cb' + this.value).css('color', '#'+ newColor);\n  });\n\n  $(\"select#numOfBlocks\").change( function () {//# boxes displayed\n    var magicNum = parseInt($(\"select#numOfBlocks option:selected\").text());\n    for(var i = 1; i <= 6; i++){\n      var theID = \"#cb\" + i;\n      if (magicNum < i){\n        $(theID).hide();\n      } else{\n        $(theID).show();\n      }\n    }\n  });\n\n  $('select#colCol1'/*.colorPick*/).change( function () {//carousel color group\n    var myList = fetchList(parseInt($(this).find('option:selected').text()));\n    var i = 0;\n    $(this).find('ul').empty();\n\n    while(myList[i]){\n      var thisBlock = 'ul li:eq(' + i + ')';\n      var newColor = myList[i].hexVal;\n\n      $(this).find('ul').append('<li class=\"colorBlockMini\"></li>');\n      $(this).find(thisBlock).css('background-color', newColor);\n      $(this).find(thisBlock).append(myList[i].name);\n      i++;\n    }\n  });\n\n  $('#colCol1 ul li').click( function() {\n    $(this).css('background-color', '636363');\n    //$(this).height('8 vw');\n  });\n\n});\n\n",
+			"file": "colors.js",
+			"file_size": 2296,
+			"file_write_time": 130627021350000000,
+			"settings":
+			{
+				"buffer_size": 2180,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "kuler.html",
+			"settings":
+			{
+				"buffer_size": 6582,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "colors_style.css",
+			"settings":
+			{
+				"buffer_size": 2237,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "colors2.json",
+			"settings":
+			{
+				"buffer_size": 8255,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "colors2-dirty.json",
+			"settings":
+			{
+				"buffer_size": 8563,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Katherine/Documents/15-Junior/projects/CS-pickUpLines.txt",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/kaytea.github.io/dirty-colors.js",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/WITW/mongoNode.js",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/comp20-kwasynczuk/mmap/index.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/kaytea.github.io/kuler.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/sem_proj/comp20-f2014-team15/index1.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/comp20-f2014-team15/comp20-f2014-team15/index.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/comp20-kwasynczuk/newsfeed/NFstyle.css",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/notes 10-23",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/notes 10-28",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/comp20-kwasynczuk/redline/index_old.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Tufts Hackathon/polyhack/index.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Tufts Hackathon/style.css",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/comp20-kwasynczuk/mmap/README.txt",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/comp20-kwasynczuk/mmap/geolocation_map_style.css",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/comp20-kwasynczuk/mmap/junk.js",
+		"/Users/wasynczuk2/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/index.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/h_files_outline.txt",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/karaoke/README.txt",
+		"/Users/wasynczuk2/Desktop/DESIGN (hw4)",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/responsive.css",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/lab3-homer/responsive.css",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/kaytea/bio.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/kaytea/resume.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/kaytea/index.html",
+		"/Users/wasynczuk2/Documents/15-Junior/Semester1/Comp20/kaytea/stylesheet_1.css"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'",
+			"7em",
+			"(time ",
+			" time "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"video.currentTime"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "colors.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "colors.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1728,
+								1728
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 789.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "kuler.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3429,
+								3402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "colors_style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1377,
+								1377
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1134.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "colors2.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "colors2-dirty.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8563,
+								8563
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "kuler.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
