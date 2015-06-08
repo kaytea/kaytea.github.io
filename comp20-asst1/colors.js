@@ -61,7 +61,7 @@ $(document).ready(function() {
 
     while(myList[i]){
       var thisBlock = 'ul li:eq(' + i + ')';
-      thisBlock.css("background-color", "#" + myList[i].hexVal)
+      $(this).find(thisBlock).css("background-color", "#" + myList[i].hexVal);
       //$(this).find('game-query-list').append('<li id="GLitem'+i+'"></li>');
       $(this).find(thisBlock).append('<span> Name:&nbsp;'+ myList[i]["name"] +
         '<br/>Hex: &nbsp;'+ myList[i]["hexVal"]);
