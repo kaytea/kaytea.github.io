@@ -30,11 +30,45 @@ function fetchList(input) {
 $(document).ready(function() {
 
   $.getJSON('colors2.json', function(data) {
-    console.log("run");
+    //console.log("run");
     colorList = data;
     console.log("read in colors(?)");
-    console.log(colorList.colors);
+    //console.log(colorList.colors);
     //buildLists(colorList.colors);
+    var colors = colorList.colors;
+    for (var i = 0; i < colors[0].Red.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[0].Red[i]["hexVal"] +'">'+ colors[0].Red[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[1].Pink.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[1].Pink[i]["hexVal"] +'">'+ colors[1].Pink[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[2].Orange.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[2].Orange[i]["hexVal"] +'">'+ colors[2].Orange[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[3].Yellow.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[3].Yellow[i]["hexVal"] +'">'+ colors[3].Yellow[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[4].Green.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[4].Green[i]["hexVal"] +'">'+ colors[4].Green[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[5].Cyan.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[5].Cyan[i]["hexVal"] +'">'+ colors[5].Cyan[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[6].Blue.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[6].Blue[i]["hexVal"] +'">'+ colors[6].Blue[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[7].Purple.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[7].Purple[i]["hexVal"] +'">'+ colors[7].Purple[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[8].Brown.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[8].Brown[i]["hexVal"] +'">'+ colors[8].Brown[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[9].White.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[9].White[i]["hexVal"] +'">'+ colors[9].White[i]["name"] +'</div>');
+    }
+    for (var i = 0; i < colors[10].Grey.length; i++){
+      $('.allTheColors').append('<div class="colorBlock" style="background-color: #'+ colors[10].Grey[i]["hexVal"] +'">'+ colors[10].Grey[i]["name"] +'</div>');
+    }
   });
 
   $('.colorBlockMini:input').submit( function () {//color of selected box
