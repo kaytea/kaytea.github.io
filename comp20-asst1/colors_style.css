@@ -2,9 +2,9 @@ body{ margin: 0; padding: 0; font-family: sans-serif;}
 form{ display: inline-block ;}
 /*Title*/
 #title_box{
-	////position: absolute;
+	/*position: absolute;*/
 	width: 100%;
-	max-width: 1000px;
+	/*max-width: 1000px;*/
 	text-align: center;
 	padding: 2vw;
 	margin: 1vw 0 1vw 0;
