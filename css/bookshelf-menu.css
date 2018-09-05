@@ -27,30 +27,6 @@ body {
   margin: 0;
 }
 
-.menuItems li {
-  font-size: 1em;
-  flex: 0 1 auto;
-  color: black;
-  list-style-type: none;
-  /*margin: 0 1em 0 0;*/
-  padding: 4em .5em 0 .5em;
-  max-height: 10em;
-  -webkit-transition: padding .3s;
-  transition: padding .3s;
-  transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-}
-
-.menuItems li:hover {
-  padding: 4em 2em 0 2em;
-  font-weight: 700;
-  background-size: cover;
-  background-repeat: space;
-  /*background-position: center top;*/
-  /*text-shadow: 0 0 30px #FFFFFF;*/
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff;
-
-}
 .menuItem .menuItemTitle {
   margin: 4em .5em 0 .5em;
   background-color: white;
