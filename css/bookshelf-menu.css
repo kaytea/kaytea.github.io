@@ -1,7 +1,6 @@
 body {
   max-width: 1200px;
   padding: 0 5%;
-  /*font-family: "Noto Sans", sans-serif;*/
   font-family: 'Comfortaa', sans-serif;
   color: black;
   background: white;
@@ -12,16 +11,15 @@ body {
   justify-content: space-between;
 }
 
-.menuHeader .logoLeft{
+/*.menuHeader .logoLeft{
   max-height: 10em;
-}
+}*/
 .menuHeader .logoLeft img{
   height: 10em;
 }
 
 .menuItems {
   display: flex;
-  /*justify-content: flex-end;*/
   justify-content: space-between;
   padding-left: 2em;
   margin: 0;
@@ -55,100 +53,53 @@ body {
 }
 
 
-.menuItem.dkbl-aqui:hover .menuItemTitle {
-  background-color: #083D77;
-  color: white;
-}
-
 .bkgr-white:hover {
   background-color: white;
   color: black;
 }
-.bkgr-dkbl:hover {
+.bkgr-dkbl:hover, .bkgr-dkbl .menuItemTitle {
   background-color: #083D77;
   color: white;
 }
-.bkgr-ltbl:hover {
+.bkgr-ltbl:hover, .bkgr-ltbl .menuItemTitle {
   background-color: #92DCE5;
   color: white;
 }
-.bkgr-red:hover {
+.bkgr-red:hover, .bkgr-red .menuItemTitle {
   background-color: #F95738;
   color: white;
 }
-.bkgr-yellow:hover {
-  background-color: #F9E070;
-  color: black;
-}
-
-.bkgr-dkbl .menuItemTitle {
-  background-color: #083D77;
-  color: white;
-}
-.bkgr-ltbl .menuItemTitle {
-  background-color: #92DCE5;
-  color: white;
-}
-.bkgr-red .menuItemTitle {
-  background-color: #F95738;
-  color: white;
-}
-.bkgr-yellow .menuItemTitle {
+.bkgr-yellow:hover, .bkgr-yellow .menuItemTitle {
   background-color: #F9E070;
   color: black;
 }
 
 
-.bkgrMacaroni:hover {
+.bkgrMacaroni:hover, .bkgrMacaroniRow {
   background-image: url("../images/modtex_color+outline-offset_macaroni.png");
 }
-.bkgrDots:hover {
+.bkgrDots:hover, .bkgrDotsRow {
   background-image: url("../images/modtex_color+outline-offset_dots.png");
 }
-.bkgrLines:hover {
+.bkgrLines:hover, .bkgrLinesRow {
   background-image: url("../images/modtex_color+outline-offset_lines.png");
 }
-.bkgrSquares:hover {
+.bkgrSquares:hover, .bkgrSquaresRow {
   background-image: url("../images/modtex_color+outline-offset_squares.png");
 }
-.bkgrSquiggles:hover {
+.bkgrSquiggles:hover, .bkgrSquigglesRow {
   background-image: url("../images/modtex_color+outline-offset_squiggles.png");
 }
-.bkgrDiamonds:hover {
-  background-image: url("../images/modtex_color+outline-offset_diamonds.png");
-}
-
-.bkgrMacaroniRow {
-  background-image: url("../images/modtex_color+outline-offset_macaroni.png");
-}
-.bkgrDotsRow {
-  background-image: url("../images/modtex_color+outline-offset_dots.png");
-}
-.bkgrLinesRow {
-  background-image: url("../images/modtex_color+outline-offset_lines.png");
-}
-.bkgrSquaresRow {
-  background-image: url("../images/modtex_color+outline-offset_squares.png");
-}
-.bkgrSquigglesRow {
-  background-image: url("../images/modtex_color+outline-offset_squiggles.png");
-}
-.bkgrDiamondsRow {
+.bkgrDiamonds:hover, .bkgrDiamondsRow {
   background-image: url("../images/modtex_color+outline-offset_diamonds.png");
 }
 
 .bkgrMacaroniRow, .bkgrDotsRow, .bkgrLinesRow, .bkgrSquaresRow, .bkgrSquigglesRow, .bkgrDiamondsRow {
-  /*display: block;*/
   height: 10em;
   background-size: cover;
   background-repeat: space;
   background-position: center top;
-  /*background-repeat: repeat-x;*/
 }
-.bkgrSquaresRow, .bkgrDiamondsRow {
-  background-position: center center;
-}
-
-.bkgrSquigglesRow {
+.bkgrSquaresRow, .bkgrDiamondsRow, .bkgrSquigglesRow {
   background-position: center center;
 }
