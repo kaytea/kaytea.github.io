@@ -1,0 +1,142 @@
+/* .menuItems li { */
+/*     -ms-transform: rotate(-90deg); /* IE 9 */ 
+/*     -webkit-transform: rotate(-90deg); /* Safari */
+/*     transform: rotate(-90deg); */
+/* } */
+
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+.menuHeader {
+  /*background-color: #EFECCA;*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuHeader .logoLeft{
+  max-height: 10em;
+}
+.menuHeader .logoLeft img{
+  height: 10em;
+}
+
+.menuItems {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.menuItems li {
+  font-size: 1em;
+  flex: 0 1 auto;
+  color: black;
+  list-style-type: none;
+  /*margin: 0 1em 0 0;*/
+  padding: 4em .5em 0 .5em;
+  max-height: 10em;
+  -webkit-transition: padding .3s;
+  transition: padding .3s;
+  transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+}
+
+.menuItems li:hover {
+  padding: 4em 2em 0 2em;
+  font-weight: 700;
+  background-size: cover;
+  background-repeat: space;
+  /*background-position: center top;*/
+  /*text-shadow: 0 0 30px #FFFFFF;*/
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff;
+
+}
+.menuItem .menuItemTitle {
+  margin: 4em .5em 0 .5em;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+.menuItem {
+  padding: 4em 0 0 0;
+  max-height: 10em;
+  margin: 0 1em 0 0;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-transition: padding .3s;
+  transition: padding .3s;
+  transition-timing-function: ease-in;
+}
+.menuItems .menuItem:hover {
+  padding: 4em 2em 0 2em;
+  font-weight: 700;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: space;
+}
+
+.bkgrMacaroni:hover {
+  background-image: url("../images/modtex_color+outline-offset_macaroni.png");
+}
+.bkgrDots:hover {
+  background-image: url("../images/modtex_color+outline-offset_dots.png");
+}
+.bkgrLines:hover {
+  background-image: url("../images/modtex_color+outline-offset_lines.png");
+}
+.bkgrSquares:hover {
+  background-image: url("../images/modtex_color+outline-offset_squares.png");
+}
+.bkgrSquiggles:hover {
+  background-image: url("../images/modtex_color+outline-offset_squiggles.png");
+}
+.bkgrDiamonds:hover {
+  background-image: url("../images/modtex_color+outline-offset_diamonds.png");
+}
+
+.bkgrMacaroniRow {
+  background-image: url("../images/modtex_color+outline-offset_macaroni.png");
+}
+.bkgrDotsRow {
+  background-image: url("../images/modtex_color+outline-offset_dots.png");
+}
+.bkgrLinesRow {
+  background-image: url("../images/modtex_color+outline-offset_lines.png");
+}
+.bkgrSquaresRow {
+  background-image: url("../images/modtex_color+outline-offset_squares.png");
+}
+.bkgrSquigglesRow {
+  background-image: url("../images/modtex_color+outline-offset_squiggles.png");
+}
+.bkgrDiamondsRow {
+  background-image: url("../images/modtex_color+outline-offset_diamonds.png");
+}
+
+.bkgrMacaroniRow, .bkgrDotsRow, .bkgrLinesRow, .bkgrSquaresRow, .bkgrSquigglesRow, .bkgrDiamondsRow {
+  display: block;
+  height: 10em;
+  background-size: cover;
+  background-repeat: space;
+  background-position: center top;
+  /*background-repeat: repeat-x;*/
+}
+
+
+/*li:hover {*/
+  /*-webkit-animation: openBook1 1.5s ease-in-out infinite alternate;*/
+  -moz-animation: openBook1 1.5s ease-in-out infinite alternate;
+  animation: openBook1 1.5s ease-in-out infinite alternate;
+/*}*/
+
+
+@keyframes openBook1 {
+  from {
+    /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff;*/
+    text-shadow: 0 0 10px #EFECCA, 0 0 20px #EFECCA, 0 0 30px #EFECCA, 0 0 40px #EFECCA, 0 0 70px #EFECCA, 0 0 80px #EFECCA, 0 0 100px #EFECCA, 0 0 150px #EFECCA;
+
+  }
+  to {
+    text-shadow: 0 0 5px #EFECCA, 0 0 10px #EFECCA, 0 0 15px #EFECCA, 0 0 20px #EFECCA, 0 0 35px #EFECCA, 0 0 40px #EFECCA, 0 0 50px #EFECCA, 0 0 75px #EFECCA;
+    /*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 75px #fff;*/
+  }
+}

@@ -22,43 +22,17 @@ a, li {
   transition: all 0.5s;
 }
 
-.kosugiFont{
-  font-family: 'Kosugi Maru', sans-serif;
-}
-.juaFont{
-  font-family: 'Jua', sans-serif;
-}
 .comfortaaFont{
   font-family: 'Comfortaa', cursive;
 }
-.markerFont{
-  font-family: 'Permanent Marker', cursive;
-}
-.eliteFont{
-  font-family: 'Special Elite', cursive;
-}
-.chewyFont{
-  font-family: 'Chewy', cursive;
-}
-.hotelFont{
-  font-family: 'Grand Hotel', cursive;
-}
-.knewaveFont{
-  font-family: 'Knewave', cursive;
-}
-.paajiFont{
-  font-family: 'Baloo Paaji', cursive;
-}
-.viburFont{
-  font-family: 'Vibur', cursive;
-}
-
-
 
 li {
   font-size: 32;
 }
 
+.whiteNeon {
+  color: #FFF;
+}
 .whiteNeon:hover {
   -webkit-animation: neonWhite 1.5s ease-in-out infinite alternate;
   -moz-animation: neonWhite 1.5s ease-in-out infinite alternate;
@@ -68,108 +42,75 @@ li {
 .redNeon {
   color: #FF1177;
 }
-p:nth-child(1) a, .redNeon:hover {
-  color: #fff;
-  /*font-family: Monoton;*/
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-p:nth-child(1) a:hover {
-  color: #FF1177;
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-}
-
-p:nth-child(2) a {
-  font-size: 1.5em;
-  color: #228DFF;
-  font-family: Iceland;
-}
-
-.blueNeon {
-  color: #228DFF;
-}
-p:nth-child(2) a:hover, .blueNeon:hover {
-  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate;
-}
-
-p:nth-child(3) a {
-  color: #FFDD1B;
-  font-family: Pacifico;
-}
-
-.yellowNeon {
-  color: #FFDD1B;
-}
-p:nth-child(3) a:hover, .yellowNeon:hover {
-  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
-  animation: neon3 1.5s ease-in-out infinite alternate;
-}
-
-p:nth-child(4) a {
-  color: #B6FF00;
-  font-family: "Press Start 2P";
-  font-size: 0.8em;
-}
-
-.greenNeon {
-  color: #B6FF00;
-}
-p:nth-child(4) a:hover, .greenNeon:hover {
-  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
-  animation: neon4 1.5s ease-in-out infinite alternate;
-}
-
-p:nth-child(5) a {
-  color: #FF9900;
-  font-family: Audiowide;
+.redNeon:hover {
+  /*color: #fff;*/
+  -webkit-animation: aNeonRed 1.5s ease-in-out infinite alternate;
+  -moz-animation: aNeonRed 1.5s ease-in-out infinite alternate;
+  animation: aNeonRed 1.5s ease-in-out infinite alternate;
 }
 
 .orangeNeon {
   color: #FF9900;
 }
-p:nth-child(5) a:hover, .orangeNeon:hover {
-  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
-  animation: neon5 1.5s ease-in-out infinite alternate;
+.orangeNeon:hover {
+  -webkit-animation: aNeonOrange 1.5s ease-in-out infinite alternate;
+  -moz-animation: aNeonOrange 1.5s ease-in-out infinite alternate;
+  animation: aNeonOrange 1.5s ease-in-out infinite alternate;
 }
 
-p:nth-child(6) a {
-  color: #BA01FF;
-  font-family: Vampiro One;
+.yellowNeon {
+  color: #FFDD1B;
+}
+.yellowNeon:hover {
+  -webkit-animation: aNeonYellow 1.5s ease-in-out infinite alternate;
+  -moz-animation: aNeonYellow 1.5s ease-in-out infinite alternate;
+  animation: aNeonYellow 1.5s ease-in-out infinite alternate;
+}
+
+.greenNeon {
+  color: #B6FF00;
+}
+.greenNeon:hover {
+  -webkit-animation: aNeonGreen 1.5s ease-in-out infinite alternate;
+  -moz-animation: aNeonGreen 1.5s ease-in-out infinite alternate;
+  animation: aNeonGreen 1.5s ease-in-out infinite alternate;
+}
+
+.blueNeon {
+  color: #228DFF;
+}
+.blueNeon:hover {
+  -webkit-animation: aNeonBlue 1.5s ease-in-out infinite alternate;
+  -moz-animation: aNeonBlue 1.5s ease-in-out infinite alternate;
+  animation: aNeonBlue 1.5s ease-in-out infinite alternate;
 }
 
 .violetNeon {
   color: #BA01FF;
 }
-p:nth-child(6) a:hover, .violetNeon:hover {
-  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
-  animation: neon6 1.5s ease-in-out infinite alternate;
+.violetNeon:hover {
+  -webkit-animation: aNeonViolet 1.5s ease-in-out infinite alternate;
+  -moz-animation: aNeonViolet 1.5s ease-in-out infinite alternate;
+  animation: aNeonViolet 1.5s ease-in-out infinite alternate;
 }
 
 p a:hover, li:hover {
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 /*glow for webkit*/
 
-@-webkit-keyframes neon1 {
+@-webkit-keyframes aNeonRed {
   from {
+    color: #ffffff;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
   }
   to {
+    color: #228DFF;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
 }
 
-@-webkit-keyframes neon2 {
+@-webkit-keyframes aNeonBlue {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
@@ -178,7 +119,7 @@ p a:hover, li:hover {
   }
 }
 
-@-webkit-keyframes neon3 {
+@-webkit-keyframes aNeonYellow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
   }
@@ -187,7 +128,7 @@ p a:hover, li:hover {
   }
 }
 
-@-webkit-keyframes neon4 {
+@-webkit-keyframes aNeonGreen {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
   }
@@ -196,7 +137,7 @@ p a:hover, li:hover {
   }
 }
 
-@-webkit-keyframes neon5 {
+@-webkit-keyframes aNeonOrange {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
   }
@@ -205,7 +146,7 @@ p a:hover, li:hover {
   }
 }
 
-@-webkit-keyframes neon6 {
+@-webkit-keyframes aNeonViolet {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   }
@@ -224,7 +165,7 @@ p a:hover, li:hover {
 }
 /*glow for mozilla*/
 
-@-moz-keyframes neon1 {
+@-moz-keyframes aNeonRed {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
   }
@@ -233,7 +174,7 @@ p a:hover, li:hover {
   }
 }
 
-@-moz-keyframes neon2 {
+@-moz-keyframes aNeonBlue {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
@@ -242,7 +183,7 @@ p a:hover, li:hover {
   }
 }
 
-@-moz-keyframes neon3 {
+@-moz-keyframes aNeonYellow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
   }
@@ -251,7 +192,7 @@ p a:hover, li:hover {
   }
 }
 
-@-moz-keyframes neon4 {
+@-moz-keyframes aNeonGreen {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
   }
@@ -260,7 +201,7 @@ p a:hover, li:hover {
   }
 }
 
-@-moz-keyframes neon5 {
+@-moz-keyframes aNeonOrange {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
   }
@@ -269,7 +210,7 @@ p a:hover, li:hover {
   }
 }
 
-@-moz-keyframes neon6 {
+@-moz-keyframes aNeonViolet {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   }
@@ -288,16 +229,19 @@ p a:hover, li:hover {
 }
 /*glow*/
 
-@keyframes neon1 {
+/*color changes from white to 95% saturation of orig neon color*/
+@keyframes aNeonRed {
   from {
+    color: #ffffff;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
   }
   to {
+    color: #ffe6f1; 
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
   }
 }
 
-@keyframes neon2 {
+@keyframes aNeonBlue {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
@@ -306,7 +250,7 @@ p a:hover, li:hover {
   }
 }
 
-@keyframes neon3 {
+@keyframes aNeonYellow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
   }
@@ -315,7 +259,7 @@ p a:hover, li:hover {
   }
 }
 
-@keyframes neon4 {
+@keyframes aNeonGreen {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
   }
@@ -324,7 +268,7 @@ p a:hover, li:hover {
   }
 }
 
-@keyframes neon5 {
+@keyframes aNeonOrange {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
   }
@@ -333,7 +277,7 @@ p a:hover, li:hover {
   }
 }
 
-@keyframes neon6 {
+@keyframes aNeonViolet {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   }
@@ -350,8 +294,9 @@ p a:hover, li:hover {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 75px #fff;
   }
 }
-/*REEEEEEEEEEESPONSIVE*/
 
+
+/*REEEEEEEEEEESPONSIVE*/
 @media (max-width: 650px) {
   #container {
     width: 100%;
