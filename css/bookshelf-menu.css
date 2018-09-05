@@ -1,15 +1,13 @@
-/* .menuItems li { */
-/*     -ms-transform: rotate(-90deg); /* IE 9 */ 
-/*     -webkit-transform: rotate(-90deg); /* Safari */
-/*     transform: rotate(-90deg); */
-/* } */
-
 body {
-  font-family: 'Comfortaa', cursive;
+  max-width: 1200px;
+  padding: 0 5%;
+  /*font-family: "Noto Sans", sans-serif;*/
+  font-family: 'Comfortaa', sans-serif;
+  color: black;
+  background: white;
 }
 
 .menuHeader {
-  /*background-color: #EFECCA;*/
   display: flex;
   justify-content: space-between;
 }
@@ -23,32 +21,83 @@ body {
 
 .menuItems {
   display: flex;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
+  justify-content: space-between;
+  padding-left: 2em;
   margin: 0;
 }
 
 .menuItem .menuItemTitle {
-  margin: 4em .5em 0 .5em;
+  margin: 4em 0 0 0;
+  padding: .25em;
   background-color: white;
   color: black;
   text-decoration: none;
 }
+
 .menuItem {
   padding: 4em 0 0 0;
   max-height: 10em;
-  margin: 0 1em 0 0;
+  margin: 0 1.5em;
   -webkit-transition-timing-function: ease-in;
-  -webkit-transition: padding .3s;
-  transition: padding .3s;
+  -webkit-transition: padding .3s, margin .3s;
+  transition: padding .3s, margin .3s;
   transition-timing-function: ease-in;
 }
+
 .menuItems .menuItem:hover {
-  padding: 4em 2em 0 2em;
+  padding: 4em 1.5em 0 1.5em;
+  margin: 0 0;
   font-weight: 700;
   background-size: cover;
   background-position: center top;
   background-repeat: space;
 }
+
+
+.menuItem.dkbl-aqui:hover .menuItemTitle {
+  background-color: #083D77;
+  color: white;
+}
+
+.bkgr-white:hover {
+  background-color: white;
+  color: black;
+}
+.bkgr-dkbl:hover {
+  background-color: #083D77;
+  color: white;
+}
+.bkgr-ltbl:hover {
+  background-color: #92DCE5;
+  color: white;
+}
+.bkgr-red:hover {
+  background-color: #F95738;
+  color: white;
+}
+.bkgr-yellow:hover {
+  background-color: #F9E070;
+  color: black;
+}
+
+.bkgr-dkbl .menuItemTitle {
+  background-color: #083D77;
+  color: white;
+}
+.bkgr-ltbl .menuItemTitle {
+  background-color: #92DCE5;
+  color: white;
+}
+.bkgr-red .menuItemTitle {
+  background-color: #F95738;
+  color: white;
+}
+.bkgr-yellow .menuItemTitle {
+  background-color: #F9E070;
+  color: black;
+}
+
 
 .bkgrMacaroni:hover {
   background-image: url("../images/modtex_color+outline-offset_macaroni.png");
@@ -89,30 +138,17 @@ body {
 }
 
 .bkgrMacaroniRow, .bkgrDotsRow, .bkgrLinesRow, .bkgrSquaresRow, .bkgrSquigglesRow, .bkgrDiamondsRow {
-  display: block;
+  /*display: block;*/
   height: 10em;
   background-size: cover;
   background-repeat: space;
   background-position: center top;
   /*background-repeat: repeat-x;*/
 }
+.bkgrSquaresRow, .bkgrDiamondsRow {
+  background-position: center center;
+}
 
-
-/*li:hover {*/
-  /*-webkit-animation: openBook1 1.5s ease-in-out infinite alternate;*/
-  -moz-animation: openBook1 1.5s ease-in-out infinite alternate;
-  animation: openBook1 1.5s ease-in-out infinite alternate;
-/*}*/
-
-
-@keyframes openBook1 {
-  from {
-    /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 150px #fff;*/
-    text-shadow: 0 0 10px #EFECCA, 0 0 20px #EFECCA, 0 0 30px #EFECCA, 0 0 40px #EFECCA, 0 0 70px #EFECCA, 0 0 80px #EFECCA, 0 0 100px #EFECCA, 0 0 150px #EFECCA;
-
-  }
-  to {
-    text-shadow: 0 0 5px #EFECCA, 0 0 10px #EFECCA, 0 0 15px #EFECCA, 0 0 20px #EFECCA, 0 0 35px #EFECCA, 0 0 40px #EFECCA, 0 0 50px #EFECCA, 0 0 75px #EFECCA;
-    /*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 75px #fff;*/
-  }
+.bkgrSquigglesRow {
+  background-position: center center;
 }
