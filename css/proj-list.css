@@ -1,0 +1,61 @@
+.focus-content {
+	max-width: 950px;
+	margin: auto;
+}
+ul.project-list {
+	text-decoration: none;
+	padding: 0 0 0 0;
+}
+li.proj-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 2em 0;
+	border-bottom: 2px solid black;
+	margin: 0 0 2em 0;
+}
+
+.proj-item .proj-item-content {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+}
+
+.proj-item .proj-item-content .proj-item-title {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1.4em;
+	font-weight: 700;
+	/*padding-bottom: .7em;*/
+}
+
+.proj-item .proj-item-content .proj-item-title .fa {
+	padding-right: .3em;
+}
+.proj-item .proj-item-content .proj-item-title .fa-flash {
+	color: #F9E070;
+}
+.proj-item .proj-item-content .proj-item-title .fa-university {
+	color: #92dce5;
+}
+
+.proj-item .proj-item-content .proj-item-descr {
+	color: black;
+	padding: .7em 0;
+}
+
+.proj-item .proj-item-content .proj-item-links ul {
+	align-self: flex-end;
+	margin: 0;
+	padding: .3em 0 0 0;
+}
+
+.proj-item .proj-item-content .proj-item-links ul li {
+	text-decoration: none;
+	display: inline-block;
+	padding-left: .4em;
+	color: #083D77;
+}
+
+.proj-item .proj-item-image img {
+	max-height: 10em;
+}
