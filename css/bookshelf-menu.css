@@ -1,4 +1,6 @@
+
 body {
+  margin: 8px 0 0 0;
   max-width: 1200px;
   padding: 0 5%;
   font-family: 'Comfortaa', sans-serif;
@@ -11,9 +13,6 @@ body {
   justify-content: space-between;
 }
 
-/*.menuHeader .logoLeft{
-  max-height: 10em;
-}*/
 .menuHeader .logoLeft img{
   height: 10em;
 }
@@ -103,3 +102,62 @@ body {
 .bkgrSquaresRow, .bkgrDiamondsRow, .bkgrSquigglesRow {
   background-position: center center;
 }
+
+
+@media screen and (max-width: 1310px) { 
+  body {
+    /*max-width: 1200px;*/
+    padding: 0 0;
+  }
+  .menuHeader {
+    /*width: 100%;*/
+    padding: 0 3%;
+    min-width: 1200px;
+    margin: auto;
+  }
+/*  .menuItems {
+    flex-grow: 1;
+  }*/
+  .menuHeader .logoLeft img{
+    height: 7em;
+  }
+  .menuItem {
+    /*padding: 3em 0 0 0;*/
+    max-height: 7em;
+  }
+  .bkgrMacaroniRow, .bkgrDotsRow, .bkgrLinesRow, .bkgrSquaresRow, .bkgrSquigglesRow, .bkgrDiamondsRow {
+    height: 7em;
+  }
+}
+/* -------------------------------------
+ * Small Browser Window / Tablet
+ * ------------------------------------- */
+@media screen and (max-width: 1200px) { 
+/*  body {
+    max-width: 1200px;
+  }*/
+/*  .menuHeader {
+    width: 1055px;
+    margin: auto;
+  }
+  .menuHeader .logoLeft img{
+    height: 7em;
+  }*/
+}
+/* -------------------------------------
+ * mobile phones
+ * ------------------------------------- */
+@media screen and (max-width: 767px) { 
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+
+
