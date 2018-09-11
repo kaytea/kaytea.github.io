@@ -10,7 +10,8 @@ body {
 
 .menuHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: auto;
 }
 
 .menuHeader .logoLeft img{
@@ -19,7 +20,8 @@ body {
 
 .menuItems {
   display: flex;
-  justify-content: space-between;
+  flex-basis: 60%;
+  justify-content: space-evenly;
   padding-left: 2em;
   margin: 0;
 }
@@ -111,9 +113,9 @@ body {
   }
   .menuHeader {
     /*width: 100%;*/
-    padding: 0 3%;
+/*    padding: 0 3%;
     min-width: 1200px;
-    margin: auto;
+    margin: auto;*/
   }
 /*  .menuItems {
     flex-grow: 1;
@@ -132,7 +134,7 @@ body {
 /* -------------------------------------
  * Small Browser Window / Tablet
  * ------------------------------------- */
-@media screen and (max-width: 1200px) { 
+@media screen and (max-width: 900px) { 
 /*  body {
     max-width: 1200px;
   }*/

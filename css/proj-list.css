@@ -31,10 +31,10 @@ li.proj-item {
 .proj-item .proj-item-content .proj-item-title .fa {
 	padding-right: .3em;
 }
-.proj-item .proj-item-content .proj-item-title .fa-flash {
+.proj-item .proj-item-content .proj-item-title .fa-flash, .fa-trophy {
 	color: #F9E070;
 }
-.proj-item .proj-item-content .proj-item-title .fa-university {
+.proj-item .proj-item-content .proj-item-title .fa-university, .fa-book {
 	color: #92dce5;
 }
 
@@ -56,6 +56,12 @@ li.proj-item {
 	color: #083D77;
 }
 
+.proj-item .proj-item-content .proj-item-links ul li i.fa {
+	text-decoration: none;
+	color: #083D77;
+}
+
 .proj-item .proj-item-image img {
 	max-height: 10em;
+	padding-left: 1em;
 }
