@@ -1,0 +1,56 @@
+.my-links {
+	display: flex;
+	justify-content: center;
+	padding: .5em;
+	background-color: white;
+	margin: 2em 0;
+}
+
+.my-links a {
+	text-decoration: none;
+	color: #083D77;
+	font-size: 3em;
+	padding: 0 .5em;
+}
+
+.bkgr-macaroni {
+	background-image: url("../images/modtex_color+outline-offset_macaroni.png");
+	/*background-repeat: space;*/
+	/*height: 950;*/
+	background-position: center;
+	/*background-size: 90%;*/
+	min-height: 950;
+}
+
+.big-words {
+	display: flex;
+	justify-content: space-evenly;
+}
+.big-words h1 {
+	font-weight: 700;
+	font-size: 5em;
+	text-shadow: 2px 2px 8px #FFF, 0px 0px 5px #fff;
+	/*background-color: white;*/
+}
+.big-words h1:before {
+	background-color: white;
+	height: 3em;
+	width: 5em;
+}
+
+.big-words h1:nth-child(1) {
+	color: #F95738;
+	margin-top: 1em;
+}
+
+.big-words h1:nth-child(2) {
+	color: #083D77;
+	margin-top: 3em;
+	font-family: "baloo paaji"
+}
+
+.big-words h1:nth-child(3) {
+	color: #F9E070;
+	margin-top: 5em;
+	font-family: "vibur";
+}
