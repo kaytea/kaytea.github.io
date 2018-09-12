@@ -1,3 +1,6 @@
+body {
+	margin: auto;
+}
 .my-links {
 	display: flex;
 	justify-content: center;
@@ -8,18 +11,23 @@
 
 .my-links a {
 	text-decoration: none;
-	color: #083D77;
+	color: #92DCE5;
 	font-size: 3em;
 	padding: 0 .5em;
+	/*text-shadow: 1px 1px 0 #083D77;*/
+	text-shadow: 1px 1px 0 black;
+	/*text-shadow: 0 0 1px black;*/
+
 }
 
 .bkgr-macaroni {
 	background-image: url("../images/modtex_color+outline-offset_macaroni.png");
 	/*background-repeat: space;*/
 	/*height: 950;*/
-	background-position: center;
+	background-position: center top;
 	/*background-size: 90%;*/
-	min-height: 950;
+	/*min-height: 950;*/
+	margin-top: -1em;
 }
 
 .big-words {
