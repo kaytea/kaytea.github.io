@@ -1,0 +1,36 @@
+.about-container { 
+	display: flex;
+	padding: 2em 10em;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.headshot img {
+	max-height: 17em;
+	box-shadow: -13px 13px #F95738;
+	outline: 2px solid black;
+}
+
+.about-text {
+	padding-left: 2em;
+}
+
+.about-text h2 {
+	font-weight: 700;
+}
+
+.about-text p {
+	font-size: 1em;
+	text-align: left;
+}
+
+/*.about-container {
+	background-color: red;
+}
+
+.about-text {
+	background-color: yellow;
+}
+
+.headshot {
+	background-color: blue;
+}*/
