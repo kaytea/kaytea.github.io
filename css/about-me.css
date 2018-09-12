@@ -16,11 +16,31 @@
 
 .about-text h2 {
 	font-weight: 700;
+	color: #F95738;
+	font-size: 1.7em;
+	/*text-shadow: 0 0 2px black;*/
 }
 
 .about-text p {
-	font-size: 1em;
+	font-size: 1.2em;
 	text-align: left;
+}
+
+p.contact {
+	/*color: #083D77;*/
+	color: #92DCE5;
+	font-size: 1.2em;
+}
+.contact a {
+	font-weight: 700;
+	color: #F95738;
+	text-decoration: underline;
+}
+
+.contact a:hover {
+	font-weight: 700;
+	color: #F9E070;
+	font-style: italic;
 }
 
 /*.about-container {

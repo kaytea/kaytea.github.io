@@ -14,21 +14,33 @@ body {
 	color: #92DCE5;
 	font-size: 3em;
 	padding: 0 .5em;
-	/*text-shadow: 1px 1px 0 #083D77;*/
 	text-shadow: 1px 1px 0 black;
-	/*text-shadow: 0 0 1px black;*/
-
 }
+
 
 .bkgr-macaroni {
 	background-image: url("../images/modtex_color+outline-offset_macaroni.png");
-	/*background-repeat: space;*/
-	/*height: 950;*/
 	background-position: center top;
-	/*background-size: 90%;*/
-	/*min-height: 950;*/
 	margin-top: -1em;
+	/*max-width: 1250px;*/
 }
+
+/*.bkgr-macaroni::after {
+	content: "";
+	background: url("../images/modtex_color+outline-offset_macaroni.png");
+	background-position: center top;
+	max-width: 1250px;
+
+	opacity: 0.5;
+	top: 5em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}*/
+
+
 
 .big-words {
 	display: flex;
