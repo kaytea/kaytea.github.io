@@ -7,6 +7,9 @@ body {
   color: black;
   background: white;
 }
+.name-long, .name-initials {
+  display: none;
+}
 
 .menuHeader {
   display: flex;
@@ -107,23 +110,12 @@ body {
 
 @media screen and (max-width: 1310px) { 
   body {
-    /*max-width: 1200px;*/
     padding: 0 0;
   }
-  .menuHeader {
-    /*width: 100%;*/
-/*    padding: 0 3%;
-    min-width: 1200px;
-    margin: auto;*/
-  }
-/*  .menuItems {
-    flex-grow: 1;
-  }*/
   .menuHeader .logoLeft img{
     height: 7em;
   }
   .menuItem {
-    /*padding: 3em 0 0 0;*/
     max-height: 7em;
   }
   .bkgrMacaroniRow, .bkgrDotsRow, .bkgrLinesRow, .bkgrSquaresRow, .bkgrSquigglesRow, .bkgrDiamondsRow {
@@ -133,22 +125,81 @@ body {
 /* -------------------------------------
  * Small Browser Window / Tablet
  * ------------------------------------- */
-@media screen and (max-width: 900px) { 
-/*  body {
-    max-width: 1200px;
-  }*/
-/*  .menuHeader {
-    width: 1055px;
-    margin: auto;
-  }
+@media screen and (max-width: 1000px) { 
   .menuHeader .logoLeft img{
-    height: 7em;
-  }*/
+    height: 5em;
+  }
+  .menuItem {
+    padding-top: 2em;
+  }
+  .menuItems .menuItem:hover {
+    padding: 2em 1.5em 0 1.5em;
+  }
+  .bkgrMacaroniRow, .bkgrDotsRow, .bkgrLinesRow, .bkgrSquaresRow, .bkgrSquigglesRow, .bkgrDiamondsRow {
+    height: 5em;
+  }
+}
+/* -------------------------------------
+ * yip yip
+ * ------------------------------------- */
+@media screen and (max-width: 850px) { 
+
+  .menuItem {
+    margin: 0 .7em;
+    padding-top: 1.5em;
+    /*max-height: 5em;*/
+  }
+  .menuItems .menuItem:hover {
+    padding: 1.5em .7em 0 .7em;
+    margin: 0 0;
+  }
+  .bkgr-dkbl:hover, .bkgrLines .menuItemTitle {
+    background-color: #083D77;
+    color: white;
+  }
+  .bkgr-ltbl:hover, .bkgrDots .menuItemTitle, .bkgrMacaroni .menuItemTitle {
+    background-color: #92DCE5;
+    color: white;
+  }
+  .bkgr-red:hover, .bkgrSquares .menuItemTitle {
+    background-color: #F95738;
+    color: white;
+  }
+  .bkgr-yellow:hover, .bkgrSquiggles .menuItemTitle {
+    background-color: #F9E070;
+    color: black;
+  }
 }
 /* -------------------------------------
  * mobile phones
  * ------------------------------------- */
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) {
+  .menuHeader {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menuHeader .logoLeft {
+    margin: auto;
+  }
+  .menuItems {
+    margin: auto;
+    max-height: 4em;
+    padding-left: 0;
+  }
+  .big-words {
+    display: none;
+    visibility: none;
+  }
+  .name-stacked {
+    display: none;
+  }
+  .name-long {
+    display: inline-block;
+  }
+  .bkgrMacaroniRow, .bkgrDotsRow, .bkgrLinesRow, .bkgrSquaresRow, .bkgrSquigglesRow, .bkgrDiamondsRow {
+    background: none;
+    /* couls also share the bkgr love and get neg margins going here...*/
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -160,5 +211,23 @@ body {
 /* Styles */
 }
 
-
+/******************************/
+/*body {
+  background-color: red;
+}
+.menuHeader {
+  background-color: orange;
+}
+.menuItems {
+  background-color: yellow;
+}
+.menuItem {
+  background-color: green;
+}
+.bkgr-macaroni {
+  background-color: blue;
+}
+.big-words {
+  background-color: purple;
+}*/
 

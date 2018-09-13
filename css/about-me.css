@@ -43,6 +43,42 @@ p.contact {
 	font-style: italic;
 }
 
+@media screen and (max-width: 1310px) { 
+
+}
+/* -------------------------------------
+ * Small Browser Window / Tablet
+ * ------------------------------------- */
+@media screen and (max-width: 1000px) { 
+
+}
+/* -------------------------------------
+ * even smaller...
+ * ------------------------------------- */
+@media screen and (max-width: 850px) { 
+
+}
+/* -------------------------------------
+ * mobile phones
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+	.about-container {
+		flex-direction: column-reverse;
+    	justify-content: center;
+    	padding: 0 1.7em;
+	}
+	.about-text {
+		padding: 0 0;
+		margin: auto;
+	}
+	.about-text .contact {
+		text-align: center;
+	}
+	.headshot {
+		margin: auto;
+	}
+}
+
 /*.about-container {
 	background-color: red;
 }
