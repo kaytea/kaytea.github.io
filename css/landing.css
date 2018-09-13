@@ -74,3 +74,35 @@ body {
 	margin-top: 5em;
 	font-family: "vibur";
 }
+
+@media screen and (max-width: 1310px) { 
+
+}
+/* -------------------------------------
+ * Small Browser Window / Tablet
+ * ------------------------------------- */
+@media screen and (max-width: 1000px) { 
+
+}
+/* -------------------------------------
+ * yip yip
+ * ------------------------------------- */
+@media screen and (max-width: 850px) { 
+
+}
+/* -------------------------------------
+ * mobile phones
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+	.big-words {
+	    /*display: none;
+	    visibility: none;*/
+	    flex-direction: column;
+	    padding-top: 4em;
+	}
+	.big-words h1:nth-child(n) {
+		margin: 0 0;
+		margin: auto
+	}
+
+}

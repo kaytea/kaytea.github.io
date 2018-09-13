@@ -186,10 +186,6 @@ body {
     max-height: 4em;
     padding-left: 0;
   }
-  .big-words {
-    display: none;
-    visibility: none;
-  }
   .name-stacked {
     display: none;
   }
