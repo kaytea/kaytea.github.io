@@ -50,13 +50,21 @@ p.contact {
  * Small Browser Window / Tablet
  * ------------------------------------- */
 @media screen and (max-width: 1000px) { 
-
+	.about-container { 
+		align-items: flex-start;
+		padding: 1em 6em;
+	}
+	.headshot {
+		padding: 4em 0 0 0;
+	}
 }
 /* -------------------------------------
  * even smaller...
  * ------------------------------------- */
 @media screen and (max-width: 850px) { 
-
+	.about-container { 
+		padding: .5em 4em;
+	}
 }
 /* -------------------------------------
  * mobile phones
@@ -76,6 +84,7 @@ p.contact {
 	}
 	.headshot {
 		margin: auto;
+		padding: 0 0 2em 0;
 	}
 }
 
