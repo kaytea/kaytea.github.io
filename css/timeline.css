@@ -176,6 +176,10 @@ label {
   transition: color 0.3s linear 0.3s;
 }
 
+a {
+  color: #5CA2DE;
+}
+
 /* -------------------------------------
  * mobile phones (vertical version only)
  * ------------------------------------- */
@@ -207,7 +211,7 @@ label {
     border: solid transparent;
     bottom: 100%;
   }
-  .content:before {
+/*  .content:before {
     border-bottom-color: inherit;
     border-width: 17px;
     top: -16px;
@@ -220,16 +224,55 @@ label {
     top: -20px;
     left: 50px;
     margin-left: -20px;
-  }
+  }*/
   .content p {
     font-size: 0.9em;
     line-height: 1.4;
   }
 
-  .circle, .date {
+/*  .circle, .date {
+    display: none;
+  }*/
+
+  .date {
+    margin-top: -10px;
+    top: 50%;
+    left: -50px;
+    font-size: 0.95em;
+    line-height: 20px;
+    position: absolute;
+    transform: rotate(-90deg);
+    font-weight: 700;
+  }
+
+  .circle {
+    /*margin-top: -70px;
+    top: 50%;
+    left: -32px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: block;
+    position: absolute;*/
     display: none;
   }
+  .job .date {
+    color: #083D77;
+  }
+
+  .teach .date {
+    color: #92DCE5;
+  }
+
+  .award .date {
+    color: #F95738;
+  }
+
+  .proj .date {
+    color: #F9E070;
+  }
 }
-a {
-  color: #5CA2DE;
-}
+
+
